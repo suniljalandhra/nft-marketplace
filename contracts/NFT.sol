@@ -9,6 +9,7 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 // URI storage contract 
 
+import "hardhat/console.sol";
 
 contract NFT is ERC721URIStorage {
    using Counters for Counters.Counter;
