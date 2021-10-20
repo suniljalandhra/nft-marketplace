@@ -75,7 +75,8 @@ contract NFTMarket is ReentrancyGuard {
         // this will send all params to front end part  
         emit MarketItemCreated(itemId, nftContract, tokenId, msg.sender, address(0), price, false);
     }
-    // function to buy a nft from 
+    // function to buy a nft from marketPlace
+    // Transfer Ownership of a nft 
     function createMarketSale(address nftContract, uint256 itemId) public payable nonReentrant {
         uint price = idToMarketItem[itemId].price;
         uint tokenId = idToMarketItem[itemId].tokenId;
