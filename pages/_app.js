@@ -1,9 +1,15 @@
 import '../styles/globals.css'
 import Link from 'next/link'
 
+
+
+
+
 function MyApp({ Component, pageProps }) {
   return (
+    
     <div>
+      
       <nav className="border-b p-6">
      
         <p className="text-4xl font-bold">Universe Marketplace</p>
@@ -30,7 +36,14 @@ function MyApp({ Component, pageProps }) {
           </Link>
         </div>
       </nav>
+      {/* <footer className="border-b p-6 text-justify">
+        <p className="text-4xl font-bold ">Hello World!</p>
+      </footer> */}
+         
+      
     </div>
+
+    
   )
 }
 
